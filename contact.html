@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact — Titrin Agrisoil Solutions</title>
   <meta name="description" content="Get in touch with Titrin Agrisoil Solutions. Book a free consultation for ALC applications, farm plans, soil fill, or any land use question in BC."/>
   <link rel="canonical" href="https://titrin.com/contact"/>
@@ -10,114 +9,64 @@
   <link rel="icon" type="image/png" href="public/images/logo.png"/>
 </head>
 <body>
-
-<nav class="nav-wrap">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="public/images/logo.png" alt="Titrin AgriSoil Solutions"/></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
-    </ul>
-    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
-<div class="mobile-nav" id="mobileNav">
-  <button class="mobile-close" onclick="toggleNav()">✕</button>
-  <a href="index.html" onclick="toggleNav()">Home</a>
-  <a href="index.html#services" onclick="toggleNav()">Services</a>
-  <a href="projects.html" onclick="toggleNav()">Projects</a>
-  <a href="about.html" onclick="toggleNav()">About</a>
-  <a href="contact.html" onclick="toggleNav()">Contact Us</a>
-</div>
+<nav class="nav-wrap"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="public/images/logo.png" alt="Titrin AgriSoil Solutions"/></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="index.html#services">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="btn-nav">Contact Us</a></li></ul><div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div></div></nav>
+<div class="mobile-nav" id="mobileNav"><button class="mobile-close" onclick="toggleNav()">&#10005;</button><a href="index.html" onclick="toggleNav()">Home</a><a href="index.html#services" onclick="toggleNav()">Services</a><a href="projects.html" onclick="toggleNav()">Projects</a><a href="about.html" onclick="toggleNav()">About</a><a href="contact.html" onclick="toggleNav()">Contact Us</a></div>
 
 <section class="contact-pg">
   <div class="container">
-
-    <!-- Hero row: title + photo -->
-    <div class="contact-hero-row fade-up">
-      <div class="contact-hero-txt">
+    <div class="con-hero-row fade-up">
+      <div class="con-hero-txt">
+        <div class="slabel" style="margin-bottom:.6rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Contact us</div>
         <h1>Get in Touch</h1>
-        <p>Tell us about your project — we'll get back to you within one business day.</p>
+        <p>Tell us about your project &#8212; we&#8217;ll get back to you within one business day.</p>
       </div>
-      <div class="contact-hero-img">
+      <div class="con-hero-img">
         <img src="public/images/hero-bg.jpg" alt="Agricultural field in British Columbia"/>
       </div>
     </div>
 
-    <!-- Form + info row -->
-    <div class="contact-form-row fade-up">
-      <div class="contact-form-side">
-        <div class="section-label" style="margin-bottom:0.6rem;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          Contact us
-        </div>
-        <h2>Send Us a Message</h2>
-        <p>Use our convenient contact form to reach out with questions, feedback, or collaboration inquiries.</p>
-
-        <form id="contactForm" onsubmit="handleSubmit(event)" style="margin-top:1.5rem;">
+    <div class="con-row fade-up">
+      <div>
+        <div class="slabel" style="margin-bottom:.6rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Contact us</div>
+        <div class="con-form-hd">Send Us a Message</div>
+        <p class="con-form-sub">Use our convenient contact form to reach out with questions, feedback, or collaboration inquiries.</p>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
           <div class="fg"><input type="text" name="name" placeholder="Name" required/></div>
           <div class="fg"><input type="email" name="email" placeholder="Email" required/></div>
           <div class="fg"><input type="text" name="property" placeholder="Property Address/PID"/></div>
           <div class="fg">
             <select name="alr">
               <option value="" disabled selected>ALR? (Yes/No/Unsure)</option>
-              <option>Yes — property is in the ALR</option>
-              <option>No — property is not in the ALR</option>
+              <option>Yes &#8212; property is in the ALR</option>
+              <option>No &#8212; property is not in the ALR</option>
               <option>Unsure</option>
             </select>
           </div>
-          <div class="fg">
-            <input type="text" name="intent" placeholder="What are you trying to do? (deposit soil, remove soil, build greenhouse, farm plan, compliance)"/>
-          </div>
+          <div class="fg"><input type="text" name="intent" placeholder="What are you trying to do? (deposit soil, remove soil, build greenhouse, farm plan, compliance)"/></div>
           <div class="fg"><input type="text" name="timeline" placeholder="Timeline"/></div>
           <div class="fg"><textarea name="message" placeholder="Message"></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn">
-            Submit
-          </button>
-          <div id="successMsg" style="display:none;margin-top:1rem;padding:0.85rem 1rem;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;color:#15803D;font-size:0.875rem;text-align:center;">
-            ✓ Message sent! We'll be in touch within one business day.
-          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center;">Submit</button>
+          <div id="successMsg" style="display:none;margin-top:1rem;padding:.85rem 1rem;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;color:#15803D;font-size:.875rem;text-align:center;">&#10003; Message sent! We&#8217;ll be in touch within one business day.</div>
         </form>
       </div>
 
-      <div class="contact-info-side">
-        <h2>Get in Touch with Us</h2>
-        <p>Reach out to us for inquiries, support, or partnership opportunities. We're here to assist you!</p>
+      <div>
+        <div class="con-info-hd">Get in Touch with Us</div>
+        <p class="con-info-sub">Reach out for inquiries, support, or partnership opportunities. We&#8217;re here to assist you!</p>
         <div class="cmeth">
-          <div class="cmeth-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <div class="cmeth-info">
-            <small>Email</small>
-            <p>titrinsolutions@gmail.com</p>
-            <a href="mailto:titrinsolutions@gmail.com">Message →</a>
-          </div>
+          <div class="cmi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+          <div class="cmi-info"><small>Email</small><p>titrinsolutions@gmail.com</p><a href="mailto:titrinsolutions@gmail.com">Send a Message &#8594;</a></div>
         </div>
         <div class="cmeth">
-          <div class="cmeth-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          </div>
-          <div class="cmeth-info">
-            <small>Phone</small>
-            <p>+1 (778) 885-9771</p>
-            <a href="tel:+17788859771">Call Now →</a>
-          </div>
+          <div class="cmi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+          <div class="cmi-info"><small>Phone</small><p>+1 (778) 885-9771</p><a href="tel:+17788859771">Call Now &#8594;</a></div>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner"><div class="footer-brand"><img src="public/images/logo.png" alt="Titrin" class="footer-logo"/><p>Full-service agrology and construction solutions in British Columbia.</p><div class="footer-name">Tishtaar Titina, P.Ag, MSc.</div><div class="footer-cred">Licensed Professional Agrologist</div><a href="https://www.bcia.com/user/2788" target="_blank" class="footer-bcia">[BC Institute of Agrologists]</a></div><div class="footer-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="index.html#services">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><small>Email</small><a href="mailto:titrinsolutions@gmail.com">titrinsolutions@gmail.com</a></div><div class="footer-contact-item"><small>Phone</small><a href="tel:+17788859771">+1 (778) 885-9771</a></div><div class="footer-contact-item"><small>Location</small><span>Richmond BC, V6Y3Y6</span></div></div></div>
-    <div class="footer-bottom"><p>© 2025 Titrin Agrisoil Solutions Ltd.</p><a href="privacy-policy.html">Privacy Policy</a></div>
-  </div>
-</footer>
+<footer class="footer"><div class="container"><div class="foot-grid"><div class="foot-brand"><img src="public/images/logo.png" alt="Titrin" class="foot-logo"/><p>Full-service agrology and construction solutions in British Columbia.</p><div class="foot-name">Tishtaar Titina, P.Ag, MSc.</div><div class="foot-cred">Licensed Professional Agrologist</div><a href="https://www.bcia.com/user/2788" target="_blank" class="foot-bcia">[BC Institute of Agrologists]</a></div><div class="foot-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="index.html#services">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="foot-col"><h4>Contact</h4><div class="fci"><small>Email</small><a href="mailto:titrinsolutions@gmail.com">titrinsolutions@gmail.com</a></div><div class="fci"><small>Phone</small><a href="tel:+17788859771">+1 (778) 885-9771</a></div><div class="fci"><small>Location</small><span>Richmond BC, V6Y3Y6</span></div></div></div><div class="foot-bot"><p>&#169; 2025 Titrin Agrisoil Solutions Ltd.</p><a href="privacy-policy.html">Privacy Policy</a></div></div></footer>
 
 <script>
 function toggleNav(){document.getElementById('mobileNav').classList.toggle('open');}
@@ -126,7 +75,7 @@ document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 function handleSubmit(e){
   e.preventDefault();
   const btn=document.getElementById('submitBtn');
-  btn.textContent='Sending…'; btn.disabled=true;
+  btn.textContent='Sending\u2026';btn.disabled=true;
   setTimeout(()=>{
     document.getElementById('contactForm').reset();
     document.getElementById('successMsg').style.display='block';

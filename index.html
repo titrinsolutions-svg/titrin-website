@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Titrin Agrisoil Solutions — Trusted Agrology & Land-Use Specialists in BC</title>
-  <meta name="description" content="Full-service agrology and land-use consulting in British Columbia. ALC applications, farm plans, soil fill, environmental assessments, and construction oversight — led by a former ALC compliance officer."/>
-  <meta name="keywords" content="agrologist BC, ALC application, ALR consulting, farm plan BC, soil fill, P.Ag British Columbia, agricultural land commission"/>
+  <title>Titrin Agrisoil Solutions — Trusted Agrology &amp; Land-Use Specialists in BC</title>
+  <meta name="description" content="Full-service agrology and land-use consulting in British Columbia. ALC applications, farm plans, soil fill, and environmental assessments — led by a former ALC compliance officer."/>
   <link rel="canonical" href="https://titrin.com/"/>
   <link rel="stylesheet" href="styles/main.css"/>
   <link rel="icon" type="image/png" href="public/images/logo.png"/>
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav-wrap" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="public/images/logo.png" alt="Titrin AgriSoil Solutions"/></a>
@@ -23,11 +20,11 @@
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
     </ul>
-    <div class="hamburger" id="ham" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <button class="mobile-close" onclick="toggleNav()">✕</button>
+  <button class="mobile-close" onclick="toggleNav()">&#10005;</button>
   <a href="index.html" onclick="toggleNav()">Home</a>
   <a href="#services" onclick="toggleNav()">Services</a>
   <a href="projects.html" onclick="toggleNav()">Projects</a>
@@ -35,12 +32,11 @@
   <a href="contact.html" onclick="toggleNav()">Contact Us</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
-  <img src="public/images/hero-bg.jpg" alt="Agricultural farmland in British Columbia" class="hero-img"/>
-  <div class="hero-overlay"></div>
-  <div class="hero-content fade-up">
-    <h1>Trusted Agrology &amp; Land-Use Specialists in British Columbia</h1>
+  <img src="public/images/hero-bg.jpg" alt="Agricultural farmland in BC" class="hero-img"/>
+  <div class="hero-ov"></div>
+  <div class="hero-top fade-up">
+    <h1>Trusted Agrology &amp; Land&#8209;Use Specialists in British Columbia</h1>
     <p>From regulatory applications to environmental assessments, we deliver full-service agrology solutions you can rely on.</p>
   </div>
   <div class="hero-logos fade-up">
@@ -50,231 +46,136 @@
     <span class="sep">|</span>
     <img src="public/images/logo-colwood.png" alt="City of Colwood"/>
   </div>
-  <div class="hero-cta-wrap fade-up">
+  <div class="hero-bottom fade-up">
     <a href="contact.html" class="btn btn-primary">Get in Contact</a>
   </div>
 </section>
 
-<!-- WHO WE HELP -->
-<section class="who-section">
+<div class="who-sec">
   <div class="container fade-up">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-      Who We Help
+    <div class="slabel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Who We Help</div>
+    <p style="max-width:680px;">Supporting farmers, landowners, and municipalities with ALR/ALC, municipal approvals, soil/fill compliance, and on-site delivery.</p>
+  </div>
+</div>
+
+<section class="sec" id="services">
+  <div class="container">
+    <div class="sec-head fade-up">
+      <div class="slabel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>Services</div>
+      <h2>Our Services</h2>
     </div>
-    <p>Supporting farmers, landowners, and municipalities with ALR/ALC, municipal approvals, soil/fill compliance, and on-site delivery.</p>
+    <div class="svc-grid">
+      <div class="svc-card fade-up">
+        <div class="svc-card-body">
+          <h3>Agrology &amp; Compliance</h3>
+          <p>Practical, regulator-informed agrology support to keep projects feasible and compliant on agricultural land.</p>
+        </div>
+        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="svc-del-content"><ul>
+          <li>Farm Plan (BC Ministry &amp; ALC-compliant)</li>
+          <li>Land Capability Assessment (LCA)</li>
+          <li>Soil assessment &amp; sampling report</li>
+          <li>Agricultural impact assessment</li>
+          <li>Environmental Farm Plan support</li>
+          <li>Agrologist stamp &amp; sign-off</li>
+        </ul></div>
+      </div>
+      <div class="svc-card fade-up">
+        <div class="svc-card-body">
+          <h3>Permitting &amp; Regulatory</h3>
+          <p>End-to-end preparation and coordination for ALC and municipal approvals — built to reduce delays and revisions.</p>
+        </div>
+        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="svc-del-content"><ul>
+          <li>ALC non-farm use application</li>
+          <li>ALC soil/fill application narrative</li>
+          <li>ALR exclusion &amp; inclusion support</li>
+          <li>Municipal soil deposit/removal permits</li>
+          <li>ESA Development Permit support</li>
+          <li>Regulatory response letters &amp; revisions</li>
+        </ul></div>
+      </div>
+      <div class="svc-card fade-up">
+        <div class="svc-card-body">
+          <h3>Construction &amp; Fill Management</h3>
+          <p>Field-level delivery and oversight for soil/fill and agricultural land improvements — from sourcing to close-out.</p>
+        </div>
+        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="svc-del-content"><ul>
+          <li>Fill quality assessment &amp; soil sourcing</li>
+          <li>Field inspection &amp; oversight reports</li>
+          <li>RMA monitoring report (Year 1, 2, 3)</li>
+          <li>Closure &amp; compliance report</li>
+          <li>Bond release support package</li>
+          <li>Construction coordination &amp; sign-off</li>
+        </ul></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
+<section class="sec bg-gray border-t">
   <div class="container">
-    <div class="section-label fade-up">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      Services
+    <div class="sec-head fade-up">
+      <div class="slabel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Why Choose</div>
+      <h2>Why Choose Titrin?</h2>
+      <p>Science-backed solutions, local expertise, and a commitment to sustainable land use.</p>
     </div>
-    <h2 class="fade-up" style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-top:0.4rem;">Our Services</h2>
-    <div class="services-grid">
-      <div class="svc-card fade-up">
-        <h3>Agrology &amp; Compliance</h3>
-        <p>Practical, regulator-informed agrology support to keep projects feasible and compliant on agricultural land.</p>
-        <div class="svc-del">Deliverables <span class="svc-del-arrow">▼</span></div>
-      </div>
-      <div class="svc-card fade-up">
-        <h3>Permitting &amp; Regulatory</h3>
-        <p>End-to-end preparation and coordination for ALC and municipal approvals — built to reduce delays and revisions.</p>
-        <div class="svc-del">Deliverables <span class="svc-del-arrow">▼</span></div>
-      </div>
-      <div class="svc-card fade-up">
-        <h3>Construction &amp; Fill Management</h3>
-        <p>Field-level delivery and oversight for soil/fill and agricultural land improvements — from sourcing to close-out.</p>
-        <div class="svc-del">Deliverables <span class="svc-del-arrow">▼</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE -->
-<section class="section why-bg">
-  <div class="container">
-    <div class="section-label fade-up">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      Why Choose
-    </div>
-    <h2 class="fade-up" style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-top:0.4rem;">Why Choose Titrin?</h2>
-    <p class="fade-up" style="margin-top:0.4rem;margin-bottom:0;">Science-backed solutions, local expertise, and a commitment to sustainable land use.</p>
     <div class="why-list fade-up">
-      <div class="why-item">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
-        </div>
-        <div>
-          <h3>Regulatory Expertise</h3>
-          <p>10+ years of combined ALC and municipal experience equip us to navigate complexities efficiently.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-        </div>
-        <div>
-          <h3>Science-Backed Solutions</h3>
-          <p>Recommendations grounded in technical soil science and real site conditions — not generic templates.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-        </div>
-        <div>
-          <h3>Hands-On Oversight</h3>
-          <p>We're there in the field — monitoring work, supporting compliance, and proactively solving issues.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
-        </div>
-        <div>
-          <h3>Trusted Mediation</h3>
-          <p>We speak the language of landowners and regulators alike — bridging communication gaps to keep projects moving.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-        </div>
-        <div>
-          <h3>Complete Project Delivery</h3>
-          <p>Most firms hand you a report and walk away. We handle the full cycle — assessments, permitting, construction, and compliance — so you have one team from start to finish.</p>
-        </div>
-      </div>
+      <div class="why-row"><div class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div><div><h3>Regulatory Expertise</h3><p>10+ years of combined ALC and municipal experience equip us to navigate complexities efficiently.</p></div></div>
+      <div class="why-row"><div class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div><div><h3>Science-Backed Solutions</h3><p>Recommendations grounded in technical soil science and real site conditions — not generic templates.</p></div></div>
+      <div class="why-row"><div class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div><div><h3>Hands-On Oversight</h3><p>We're there in the field — monitoring work, supporting compliance, and proactively solving issues.</p></div></div>
+      <div class="why-row"><div class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg></div><div><h3>Trusted Mediation</h3><p>We speak the language of landowners and regulators alike — bridging communication gaps to keep projects moving.</p></div></div>
+      <div class="why-row"><div class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div><div><h3>Complete Project Delivery</h3><p>Most firms hand you a report and walk away. We handle the full cycle — assessments, permitting, construction, and compliance — so you have one team from start to finish.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="section">
+<section class="sec border-t">
   <div class="container">
-    <div class="proj-header fade-up">
-      <div>
-        <div class="section-label">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-          Projects
-        </div>
-        <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-top:0.4rem;">Our Projects</h2>
-      </div>
+    <div class="sec-head-row fade-up">
+      <div><div class="slabel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Projects</div><h2 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;margin-top:.35rem;color:var(--text);">Our Projects</h2></div>
     </div>
     <div class="proj-grid">
-      <a href="projects.html" class="proj-card fade-up">
-        <div class="proj-img-wrap"><img src="public/images/project-riverview.png" alt="Riverview Baseball Park" class="proj-img"/></div>
-        <div class="proj-body">
-          <div class="proj-client">City of Coquitlam</div>
-          <h3>Riverview Baseball Park</h3>
-          <p>Soil sampling, root-zone analysis, and stamped specifications for sports field construction.</p>
-          <span class="proj-tag tag-ag">Agricultural</span>
-        </div>
-      </a>
-      <a href="projects.html" class="proj-card fade-up">
-        <div class="proj-img-wrap"><img src="public/images/project-athiana.png" alt="Richmond Farm" class="proj-img"/></div>
-        <div class="proj-body">
-          <div class="proj-client">Athiana Acres</div>
-          <h3>Richmond Farm</h3>
-          <p>ALC representation, agricultural rationale, and permitting coordination for parcel realignment.</p>
-          <span class="proj-tag tag-ag">Agricultural</span>
-        </div>
-      </a>
-      <a href="projects.html" class="proj-card fade-up">
-        <div class="proj-img-wrap"><img src="public/images/project-lingyen.png" alt="Agricultural Remediation" class="proj-img"/></div>
-        <div class="proj-body">
-          <div class="proj-client">LingYen Mountain Temple</div>
-          <h3>Agricultural Remediation</h3>
-          <p>Soil remediation oversight, closure reporting, and compliance sign-off with municipal officials.</p>
-          <span class="proj-tag tag-rem">Remediation</span>
-        </div>
-      </a>
+      <a href="projects.html" class="proj-card fade-up"><div class="proj-img-wrap"><img class="proj-img" src="public/images/project-riverview.png" alt="Riverview Baseball Park"/></div><div class="proj-body"><div class="proj-client">City of Coquitlam</div><h3>Riverview Baseball Park</h3><p>Soil sampling, root-zone analysis, and stamped specifications for sports field construction.</p><span class="ptag t-ag">Agricultural</span></div></a>
+      <a href="projects.html" class="proj-card fade-up"><div class="proj-img-wrap"><img class="proj-img" src="public/images/project-athiana.png" alt="Richmond Farm"/></div><div class="proj-body"><div class="proj-client">Athiana Acres</div><h3>Richmond Farm</h3><p>ALC representation, agricultural rationale, and permitting coordination for parcel realignment.</p><span class="ptag t-ag">Agricultural</span></div></a>
+      <a href="projects.html" class="proj-card fade-up"><div class="proj-img-wrap"><img class="proj-img" src="public/images/project-lingyen.png" alt="Agricultural Remediation"/></div><div class="proj-body"><div class="proj-client">LingYen Mountain Temple</div><h3>Agricultural Remediation</h3><p>Soil remediation oversight, closure reporting, and compliance sign-off with municipal officials.</p><span class="ptag t-rem">Remediation</span></div></a>
     </div>
-    <a href="projects.html" class="view-all-link fade-up">View All Projects →</a>
+    <div class="view-all-row fade-up"><a href="projects.html" class="view-all-link">View All Projects &#8594;</a></div>
   </div>
 </section>
 
-<!-- STEPS -->
-<section class="section steps-bg" style="border-top:1px solid var(--border);">
-  <div class="container steps-section">
-    <div class="section-label fade-up" style="justify-content:center;">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
-      Steps
-    </div>
-    <h2 class="fade-up">How to Get in Touch</h2>
+<section class="sec bg-gray border-t">
+  <div class="container steps-wrap">
+    <div class="slabel fade-up" style="justify-content:center;margin-bottom:.5rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>Steps</div>
+    <h2 class="fade-up" style="font-size:clamp(1.6rem,2.5vw,2rem);font-weight:700;color:var(--text);">How to Get in Touch</h2>
     <div class="steps-grid">
-      <div class="step fade-up">
-        <div class="step-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-        </div>
-        <h3>1. Book a Free Consultation</h3>
-        <p>Tell us about your project — we'll respond within one business day.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 17H7A5 5 0 017 7h2"/><path d="M15 7h2a5 5 0 010 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-        </div>
-        <h3>2. Receive a Tailored Plan</h3>
-        <p>We assess your site and provide clear, actionable next steps.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
-        </div>
-        <h3>3. Execute with Confidence</h3>
-        <p>From applications to construction, we manage the process through to completion.</p>
-      </div>
+      <div class="step fade-up"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>1. Book a Free Consultation</h3><p>Tell us about your project &#8212; we&#8217;ll respond within one business day.</p></div>
+      <div class="step fade-up"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 17H7A5 5 0 017 7h2"/><path d="M15 7h2a5 5 0 010 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><h3>2. Receive a Tailored Plan</h3><p>We assess your site and provide clear, actionable next steps.</p></div>
+      <div class="step fade-up"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg></div><h3>3. Execute with Confidence</h3><p>From applications to construction, we manage the process through to completion.</p></div>
     </div>
-    <div class="cta-row fade-up">
+    <div class="cta-box fade-up">
       <em>Ready to move your project forward?</em>
-      <p>Book a free consultation today—we'll respond within one business day.</p>
-      <br/><br/>
+      <p>Book a free consultation today &#8212; we&#8217;ll respond within one business day.</p>
       <a href="contact.html" class="btn btn-primary">Contact Us</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="public/images/logo.png" alt="Titrin AgriSoil Solutions" class="footer-logo"/>
-        <p>Full-service agrology and construction solutions in British Columbia.</p>
-        <div class="footer-name">Tishtaar Titina, P.Ag, MSc.</div>
-        <div class="footer-cred">Licensed Professional Agrologist</div>
-        <a href="https://www.bcia.com/user/2788" target="_blank" class="footer-bcia">[BC Institute of Agrologists]</a>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <div class="footer-contact-item"><small>Email</small><a href="mailto:titrinsolutions@gmail.com">titrinsolutions@gmail.com</a></div>
-        <div class="footer-contact-item"><small>Phone</small><a href="tel:+17788859771">+1 (778) 885-9771</a></div>
-        <div class="footer-contact-item"><small>Location</small><span>Richmond BC, V6Y3Y6</span></div>
-      </div>
+    <div class="foot-grid">
+      <div class="foot-brand"><img src="public/images/logo.png" alt="Titrin" class="foot-logo"/><p>Full-service agrology and construction solutions in British Columbia.</p><div class="foot-name">Tishtaar Titina, P.Ag, MSc.</div><div class="foot-cred">Licensed Professional Agrologist</div><a href="https://www.bcia.com/user/2788" target="_blank" class="foot-bcia">[BC Institute of Agrologists]</a></div>
+      <div class="foot-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="#services">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="foot-col"><h4>Contact</h4><div class="fci"><small>Email</small><a href="mailto:titrinsolutions@gmail.com">titrinsolutions@gmail.com</a></div><div class="fci"><small>Phone</small><a href="tel:+17788859771">+1 (778) 885-9771</a></div><div class="fci"><small>Location</small><span>Richmond BC, V6Y3Y6</span></div></div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Titrin Agrisoil Solutions Ltd.</p>
-      <a href="privacy-policy.html">Privacy Policy</a>
-    </div>
+    <div class="foot-bot"><p>&#169; 2025 Titrin Agrisoil Solutions Ltd.</p><a href="privacy-policy.html">Privacy Policy</a></div>
   </div>
 </footer>
 
 <script>
 function toggleNav(){document.getElementById('mobileNav').classList.toggle('open');}
+function toggleDel(btn){btn.classList.toggle('open');btn.nextElementSibling.classList.toggle('open');}
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('in');obs.unobserve(el.target);}});},{threshold:0.08});
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 </script>

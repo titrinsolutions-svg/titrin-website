@@ -70,7 +70,7 @@
           <h3>Agrology &amp; Compliance</h3>
           <p>Practical, regulator-informed agrology support to keep projects feasible and compliant on agricultural land.</p>
         </div>
-        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
         <div class="svc-del-content"><ul>
           <li>Farm Plan (BC Ministry &amp; ALC-compliant)</li>
           <li>Land Capability Assessment (LCA)</li>
@@ -85,7 +85,7 @@
           <h3>Permitting &amp; Regulatory</h3>
           <p>End-to-end preparation and coordination for ALC and municipal approvals — built to reduce delays and revisions.</p>
         </div>
-        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
         <div class="svc-del-content"><ul>
           <li>ALC non-farm use application</li>
           <li>ALC soil/fill application narrative</li>
@@ -100,7 +100,7 @@
           <h3>Construction &amp; Fill Management</h3>
           <p>Field-level delivery and oversight for soil/fill and agricultural land improvements — from sourcing to close-out.</p>
         </div>
-        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <button class="svc-del-btn" onclick="toggleDel(this)">Deliverables <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
         <div class="svc-del-content"><ul>
           <li>Fill quality assessment &amp; soil sourcing</li>
           <li>Field inspection &amp; oversight reports</li>
@@ -175,9 +175,21 @@
 
 <script>
 function toggleNav(){document.getElementById('mobileNav').classList.toggle('open');}
-function toggleDel(btn){btn.classList.toggle('open');btn.nextElementSibling.classList.toggle('open');}
-const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('in');obs.unobserve(el.target);}});},{threshold:0.08});
-document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+function toggleDel(btn){
+  var content=btn.nextElementSibling;
+  var isOpen=btn.classList.contains('open');
+  // Close all others first
+  document.querySelectorAll('.svc-del-btn.open').forEach(function(b){
+    b.classList.remove('open');
+    b.nextElementSibling.classList.remove('open');
+  });
+  // Toggle clicked one
+  if(!isOpen){btn.classList.add('open');content.classList.add('open');}
+}
+const obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+},{threshold:0.08});
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
 </script>
 </body>
 </html>
